@@ -1,0 +1,106 @@
+.quote-mk-wrapper{
+    height: 100%;
+    width: 100%;
+    background: rgba(20,20,20,0.9);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5000;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.quote-mk-wrapper .navigation-container .continue-button-quote-mk{
+    float: right;
+    color: white;
+    font-size: 20px;
+    width:120px;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.quote-mk-wrapper .navigation-container .continue-button-quote-mk:hover{
+    cursor: pointer;
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+.quote-mk-wrapper .content-container-box-outter{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 4px white;
+    padding: 54px;
+}
+
+.quote-mk-wrapper .content-container-box-outter .content-container-box-inner
+.content-inner .title{
+    margin-bottom: 3px !important;
+}
+.quote-mk-wrapper .content-container-box-outter .content-container-box-inner
+.content-inner .title .top{
+    color: #666;
+    text-align: left;
+    display: block;
+    opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-size: 57px;
+    padding-left: 10px;
+}
+
+.quote-mk-wrapper .content-container-box-outter .content-container-box-inner
+.content-inner .title .bottom{
+    color: #b3b3b3;
+    margin-left: 1.5rem;
+    text-align: right;
+    display: block;
+    opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-size: 57px;
+    line-height: 62px;
+}
+
+.quote-mk-wrapper .content-container-box-outter .content-container-box-inner
+.content-inner .body .body-content{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.quote-mk-wrapper .content-container-box-outter .content-container-box-inner
+.content-inner .body .body-content:before{
+    content: '" ';
+    color: #666;
+    font-size: 40px;
+}
+
+.quote-mk-wrapper .content-container-box-outter .content-container-box-inner
+.content-inner .body .body-content:after{
+    content: ' "';
+    color: #666;
+    font-size: 40px;
+}
+
+.quote-mk-wrapper .content-container-box-outter .content-container-box-inner
+.content-inner .body .body-byline{
+    float: right;
+    color: white;
+    margin-top: 5px;
+    margin-right: 10px;
+    padding-right: 15px;
+    font-style: italic;
+}
