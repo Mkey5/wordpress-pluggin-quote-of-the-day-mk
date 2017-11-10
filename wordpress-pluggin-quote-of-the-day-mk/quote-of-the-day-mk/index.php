@@ -32,7 +32,8 @@ function register_quote_mk(){
 // Hooks
 register_activation_hook(__FILE__, 'q_mk_activate_plugin');
 add_action('init', 'q_mk_init');
-add_action('init' , 'q_mk_admin_init');
+add_action('init', 'q_mk_admin_init');
+add_action('init', 'checkIfCustomAdminPage'); // for removing unnecessary styles and scripts
 add_action('widgets_init', 'register_quote_mk');
 
 

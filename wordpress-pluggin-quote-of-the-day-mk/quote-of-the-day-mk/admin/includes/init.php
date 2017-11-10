@@ -18,3 +18,17 @@ function q_mk_admin_init (){
     wp_enqueue_style('q_mk_bootstrap');
     wp_enqueue_style('q_mk_admin_style');
 }
+
+function checkIfCustomAdminPage(){
+    $page = isset($_GET['page']) ? $_GET['page'] : null;
+    if(!empty($page)){
+        if($page != "q_mk_list" && $page != "q_mk_create" && $page = "q_mk_update"){
+            removeCustomPageEnqueues();
+        }
+    }
+}
+
+// for removing unnecessary styles and scripts
+function removeCustomPageEnqueues(){
+    wp_deregister_style('q_mk_bootstrap');
+}
